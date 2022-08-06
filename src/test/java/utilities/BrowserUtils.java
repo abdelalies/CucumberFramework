@@ -77,6 +77,11 @@ public class BrowserUtils {
         letsSelect = new Select(element);
         letsSelect.selectByVisibleText(optionToSelect);
     }
+//    This is from the above 3 types, selectByValue
+    public void selectByValue (WebElement element, String valueTobeSelected) {
+        letsSelect = new Select(element);
+        letsSelect.selectByValue(valueTobeSelected);
+    }
 // This is to hover over an element
     public void hoverOverToElement(WebElement element) {
         act = new Actions(Driver.getDriver());
