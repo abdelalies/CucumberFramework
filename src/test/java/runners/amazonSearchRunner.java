@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = "step_definitions",
         dryRun = false,
-        tags = "@amazonSearch"
+        tags = "@amazonSearch",
+        plugin = {"pretty", "html:Reports/htmlReport.html", "json:Reports/jsonReport.json"}
 
 )
 
